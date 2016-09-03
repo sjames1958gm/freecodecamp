@@ -1,0 +1,15 @@
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+  
+  var keys = Object.keys(source);
+  
+  return collection.filter(function(i) {
+    return keys.every(function(k) {
+      return i.hasOwnProperty(k) && v[k] === source[k];
+    });
+  });
+
+  // Only change code above this line
+}
