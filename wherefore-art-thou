@@ -5,9 +5,9 @@ function whatIsInAName(collection, source) {
   
   var keys = Object.keys(source);
   
-  return collection.filter(function(i) {
-    return keys.every(function(k) {
-      return i.hasOwnProperty(k) && v[k] === source[k];
+  return collection.filter(function(item) {
+    return keys.every(function(key) {
+      return item.hasOwnProperty(key) && item[key] === source[key];
     });
   });
 
