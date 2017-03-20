@@ -18,6 +18,7 @@ function permutate(arr1, arr2) {
 }
 
 function permAlone(str) {
+  if (str.length === 1) return; // special case
   
   var arr = str.split("");
   
