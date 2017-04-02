@@ -2,7 +2,6 @@ var count = 0;
 
 function cc(card) {
   // Only change code below this line
-  var answer = " Hold";
   switch (card) {
     case 2:
     case 3:
@@ -11,10 +10,7 @@ function cc(card) {
     case 6:
       count++;
       break;
-    case 7:
-    case 8:
-    case 9:
-      break;
+
     case 10:
     case "J":
     case "Q":
@@ -24,9 +20,7 @@ function cc(card) {
       break;
   }
 
-  if (count > 0) answer = " Bet"
-;  
-  return "" + count + answer;
+  return count + ((count > 0) ? " Bet" : " Hold");
   // Only change code above this line
 }
 
