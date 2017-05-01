@@ -1,12 +1,6 @@
 function chunkArrayInGroups(arr, size) {
-
   return arr.reduce(function(p, c) {
-    if (p[p.length - 1].length < size) {
-      p[p.length - 1].push(c);
-    }
-    else {
-      p.push([c]);
-    }
+    p[p.length - 1].length < size) ? p[p.length - 1].push(c) : p.push([c]);
     return p;
   }, [[]]);
 }
