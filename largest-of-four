@@ -1,10 +1,8 @@
 function largestOfFour(arr) {
   // You can do this!
   
-  return arr.map(function(val) {
-    return val.reduce(function(prev, curr) {
-      return (!prev || curr > prev) ? curr : prev;
-    }, undefined);
-  });
+  return arr.map((val) => val.reduce((prev, curr) => (
+      (curr > prev) ? curr : prev
+  ), -Infinity));
   
 }
