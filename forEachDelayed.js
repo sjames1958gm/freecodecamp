@@ -4,7 +4,7 @@ function forEachDelayed(delay, cb, done) {
   
   let fn = () => { 
     setTimeout(() => {
-      cb(this[i]);
+      cb(this[i], i, this);
       i++;
       if (i < this.length) {
         t = delay;
